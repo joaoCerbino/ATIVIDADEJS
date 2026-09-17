@@ -18,8 +18,12 @@ do{
             break;
         case 3:
             let Sacar = parseInt(prompt("Quantos Reais deseja Sacar?"))
-            console.log(saldo -= Sacar)
-            console.log("Seu saldo agr é de",saldo)
+            if (Sacar> saldo){
+                console.log("Voce nao tem saldo suficiente")
+            }else if(saldo>Sacar){
+                console.log(saldo -= Sacar)
+                console.log("Seu saldo agr é de",saldo)
+            }
         break;
 
         case 0:
